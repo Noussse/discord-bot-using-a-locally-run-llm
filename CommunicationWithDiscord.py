@@ -33,8 +33,9 @@ async def on_message(message):
     if message.content.lower().startswith('sage'):
         user_id = str(message.author.id)
         user_input = message.content[5:].strip()
-        if user_id in identities:
-            response = Csage.generate_response(identities[user_id], user_input)
+
+        if user_id in identities["id"]:
+            response = Csage.generate_response(identities["discord_user_descriptions"]+identities["id"][user_id], user_input)
         else:
             response = Csage.generate_response("You're talking with an unknown person. Try to find out who they are and be cautious.", user_input)
 
