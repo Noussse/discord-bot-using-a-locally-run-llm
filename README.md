@@ -24,10 +24,13 @@ pip install discord ollama requests python-dotenv
 
 example for the jason file :
 ```bash
-  {
-  "123456789012345678":  "name1 A passionate coder who loves solving complex problems and building cool projects.",
-  "987654321098765432":  "name2 A creative artist with a strong interest in web development and user experience design."
+{
+  "id": {
+    "123456789012345678": "name1 is the one who sent this message",
+    "987654321098765432": "name2 is the one who sent this message"},
+  "discord_user_descriptions": "name1 is a passionate coder who loves solving complex problems and building cool projects. name2 is a creative artist with a strong interest in web development and user experience design."
 }
+
 ```
 5-optinally you can customise the bot and give it a name like this  [Ollama Model File](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#message).
 
