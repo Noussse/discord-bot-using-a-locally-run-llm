@@ -3,9 +3,11 @@
 This project is a Discord bot that interacts with users, generates responses using the Ollama AI model (such as "llama 3.2"), and manages a dynamic conversation history. The bot maintains context by utilizing a JSON file for user identities.
 
 ## Features
-- **Ollama AI Integration**: you can use a modelfile to customise your ai.
-- **Customizable System Messages**: The bot uses a personalized system message that defines its behavior.
 - **JSON-based Identities**: Stores information related to users, like their personalities or traits, for better AI responses.
+- **Short Term Memory Model**:
+  - **Sliding Window Memory**: Retains only the most recent 100 interactions.
+  - **Organized Data**: Each memory includes a unique ID, message, response, and timestamp.
+  - **Automatic Purging**: Ensures memory remains within capacity by removing the oldest entries when full.
 
 
 ## Installation & Setup
