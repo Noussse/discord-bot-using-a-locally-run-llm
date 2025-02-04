@@ -12,7 +12,7 @@ This project is a Discord bot that interacts with users, generates responses usi
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Install Required Packages
+### Install Required Packages
 
 1️⃣ Install an LLM module from [Ollama](https://ollama.com/search).
 
